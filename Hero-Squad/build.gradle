@@ -3,9 +3,10 @@ plugins {
     id 'application'
 }
 
-group 'com.moringa.herosquad'
+group 'org.example'
 version '1.0-SNAPSHOT'
 
+mainClassName = 'App'
 
 sourceCompatibility = 1.8
 
