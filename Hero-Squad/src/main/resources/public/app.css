@@ -1,0 +1,26 @@
+body {
+background-color: black;
+color: rgb(61,133,72);
+}
+small {
+float: right;
+}
+
+a {
+color: rgb(238,154,38);
+
+}
+img {
+border: 30px;
+max-width: 100vh;
+justify-content: space-between;
+}
+.home {
+background-image: /images/dot.jpg;
+}
+.figure {
+height: 2em;
+width: 2px:
+background: black;
+float: right;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Blog{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation"><a href="/home">Home</a></li>
+    <li role="presentation"><a href="/hero"> Add Hero</a></li>
+    <li role="presentation"><a href="/squad">Add Squad</a></li>
+    <li role="presentation"><a href="/hero_squad">View Heroes</a></li>
+    <li role="presentation"><a href="/squad_hero">View Squads</a></li>
+</ul>
+<div class="container">
+    <!--begin main template-->
+    <div>
+        <h1>Welcome to Hero's page <strong> <small>Create a hero and squad for a cause</small> </strong> </h1>
+    </div>
+    <div class="page-header p-4">
+        <img src="/images/wonder2.gif" width="20%"> <img src="/images/wonder.gif" width="22%"> <img src="/images/gal.gif" width="23%"> <img src="/images/hero.gif" width="16%">
+    </div>
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    </body>
+    </html>
+{{/block}}
