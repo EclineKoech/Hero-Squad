@@ -5,14 +5,24 @@
 
 {{#partial "content"}}
 
+    <div class="squad_hero">
+    {{#if squad}}
+            <h3>Name:{{squad.name}}</h3>
+            <h3>Size:{{squad.size}}</h3>
+            <h3>Cause:{{squad.cause}}</h3>
 
-    <div class="squad-hero">
-        <h1> Squad:{{name}}</h1>
-        <h2>Max Size:{{size}}</h2>
-        <h2>Cause:{{cause}}</h2>
+        </div>
 
-</div>
 
+    {{else}}
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">No Squads😦</h5>
+                <a href="/squad" class="btn btn-primary">Add  Squad  👍</a>
+            </div>
+        </div>
+    {{/if}}
 
 {{/partial}}
 
