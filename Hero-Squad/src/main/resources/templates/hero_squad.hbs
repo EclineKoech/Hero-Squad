@@ -6,13 +6,24 @@
 {{#partial "content"}}
 
 <div class="hero_squad">
-    <h1> Hero:{{name}}</h1>
-    <h2>Age:{{age}}</h2>
-    <h2>Special Power:{{power}}</h2>
-    <h2>Weakness:{{weakness}}</h2>
+{{#if hero}}
+    <h3>Name:{{hero.name}}</h3>
+    <h3>Age:{{hero.age}}</h3>
+    <h3>Special Power:{{hero.power}}</h3>
+    <h3>Weakness:{{hero.weakness}}</h3>
+
 </div>
 
-<p>Add <a href="/hero" > more </a> here </p>
+
+{{else}}
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">No Heroes😦</h5>
+            <a href="/hero" class="btn btn-primary">Add  Hero  👍</a>
+        </div>
+    </div>
+    {{/if}}
 
 {{/partial}}
 
