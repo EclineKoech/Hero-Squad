@@ -2,7 +2,7 @@
 
 By Ecline Koech
 
-Date: 2021 08 06
+Date: 2021 08 22
 
 # Description
 
@@ -18,9 +18,9 @@ An app that allows you to recruit a well-balanced team of superheroes (or any ot
 * As a user i should be able to view heros and squads i have created.
 
 # Technologies Used
-Java
-Spark
-Css
+* Java
+* Spark
+* Css
 
 # Known Bugs
 The list for squads does not show as of now.
